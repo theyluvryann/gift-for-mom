@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mother's Day Surprise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- PAGE 1: OPENING -->
+  <div class="page active" id="page1">
+    <div id="box" onclick="openBox()">🎁</div>
+  </div>
+
+  <!-- PAGE 2: INTRO -->
+  <div class="page" id="page2">
+    <h1>HAPPY MOTHER'S DAYYY 💖✨</h1>
+    <p class="text">You mean everything to me ❤️</p>
+    <button onclick="nextPage(3)">Continue ❤️</button>
+  </div>
+
+  <!-- PAGE 3: APPRECIATION -->
+  <div class="page" id="page3">
+    <h1>My Appreciation for youu 💕</h1>
+    <p id="type1"></p>
+    <button onclick="nextPage(4)">Next ➡️</button>
+  </div>
+
+  <!-- PAGE 4: THANK YOU -->
+  <div class="page" id="page4">
+    <h1>Thank you for everythingg ❤️</h1>
+    <p id="type2"></p>
+    <button onclick="nextPage(5)">Final 💝</button>
+  </div>
+
+  <!-- PAGE 5: FINAL -->
+  <div class="page" id="page5">
+    <div id="heart">❤️</div>
+    <div id="finalText"></div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
